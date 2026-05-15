@@ -1,3 +1,7 @@
+
+
+
+#POO
 class Instrumento:
     def __init__(self, nombre,tipo):
         self.nombre = nombre
@@ -30,3 +34,6 @@ ac1=Academia("Pública")
 ac1.matricular(a1)
 ac1.matricular(a2)
 ac1.mostrar_alumnos()
+
+
+
