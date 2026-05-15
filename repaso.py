@@ -1,5 +1,5 @@
 import streamlit as st
-
+import time
 
 #Texto
 st.set_page_config(page_title="Repaso",page_icon=":)",layout="wide")
@@ -47,7 +47,12 @@ with st.container():
 st.divider()
 with st.expander("Caja de expansión"):
     st.text("Descripción")
-
+#Barra de progreso
+st.subheader("Barra de progreso")
+progreso=st.progress(0)
+for porcentaje in range(0,101,10):
+    time.sleep(1)
+    progreso.progress(porcentaje)
 #Enlaces.
 st.subheader("Imagen")
 st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHtdckAE4t_LDmdpT72tDj6sZm8ELdHRloTk4Y0DDSW5QSwGL7jLmQqOB_DJqoaDBvmUopVIZU7bbwSheK434zv6VACIjSrrmoQkIHA78&s=10",caption="Esto es un gatito")
