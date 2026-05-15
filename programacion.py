@@ -14,8 +14,8 @@ def adivinar_numero():
         except ValueError:
             print("No has introducido ningun numero ")
 
-def clasificar_nota():
-    nota= float(input("Introduce la nota: "))
+def clasificar_nota(nota):
+
     if nota < 0 or nota > 10:
         print("Nota inválida rangos de 0 a 10")
     elif nota <5:
@@ -28,4 +28,6 @@ def clasificar_nota():
         print(f"Sobresaliente: {nota}")
 
 if __name__ == "__main__":
-    clasificar_nota()
+    clasificar_nota(8.5)
+    clasificar_nota(7.5)
+    clasificar_nota(3.5)
